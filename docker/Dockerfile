@@ -6,13 +6,12 @@
 FROM node:12 AS build
 
 WORKDIR /work
+COPY package.json ./
+COPY tsconfig.json ./
 COPY public public
 COPY src src
-COPY package.json .
-COPY tsconfig.json .
 RUN yarn install && \
     yarn build
-
 
 # run
 FROM nginx:latest
