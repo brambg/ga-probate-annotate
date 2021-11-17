@@ -1,11 +1,17 @@
 all: build
 
-.install: package.json tsconfig.json
+.make/.install: package.json tsconfig.json
 	yarn install
 	touch .install
 
-.build: .install src/* public/*
+.make/.build: .make/.install src/* public/*
 	yarn build
-	touch .build
+	touch .make/.build
 
-build: .build
+build: .make/.build
+
+.make/.docker: docker/Dockerfile public/* src/* package.json
+	docker build -t ga-analiticcl-evaluation:latest -f docker/Dockerfile .
+	touch .docker
+
+docker-image: .make/.docker
