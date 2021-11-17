@@ -29,13 +29,8 @@
   border-bottom: 2px solid rgb(147, 0, 58) !important;
 }
 
-/* COLORS=[ "#00429d",
-"#4771b2",
-"#73a2c6",
-"#a5d5d8",
-"#ffffe0",
-"#ffbcaf",
-"#f4777f",
-"#cf3759",
-"#93003a",
-]; */
+.tag-place {
+  background-color: rgba(92, 223, 111, .2) !important;
+  border-bottom: 2px solid rgb(92, 223, 111) !important;
+}
+
