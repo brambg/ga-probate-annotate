@@ -10,8 +10,8 @@ COPY package.json ./
 COPY tsconfig.json ./
 COPY public public
 COPY src src
-RUN yarn install && \
-    yarn build
+RUN yarn install
+RUN yarn build
 
 # run
 FROM nginx:latest

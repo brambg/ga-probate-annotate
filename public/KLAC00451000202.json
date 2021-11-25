@@ -1,0 +1,5051 @@
+[
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "135b0ce5-938a-49f2-8afe-828d7278d1a9",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.392389",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.392415",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "vlielandt",
+                "modified": "2021-11-23T10:45:45.392419",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "vSlingelandt",
+                    "match_variant": "vlielandt",
+                    "match_score": 0.6354166666666667,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 12
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "vSlingelandt"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l1",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 12
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "vSlingelandt"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=0,12"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l1)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/0/12"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=4825,364,435,234"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "2589ccb9-045a-497f-9cd1-3ace8c90adae",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.400010",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.400028",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Berling",
+                "modified": "2021-11-23T10:45:45.400034",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Rekluing",
+                    "match_variant": "Berling",
+                    "match_score": 0.53125,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 13,
+                        "end": 21
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Rekluing"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l2",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 8
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Rekluing"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=0,8"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l2)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/0/8"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3459,784,1893,256"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "2d67c107-b59a-412f-82da-03ce4e236f34",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.400075",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.400082",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "oen",
+                "modified": "2021-11-23T10:45:45.400088",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "en",
+                    "match_variant": "oen",
+                    "match_score": 0.625,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 22,
+                        "end": 24
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "en"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l2",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 9,
+                        "end": 11
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "en"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=9,11"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l2)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/9/11"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3459,784,1893,256"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "c5360927-bfb2-471b-ab79-904b98ad1f20",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.400122",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.400128",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Han",
+                "modified": "2021-11-23T10:45:45.400144",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "hn",
+                    "match_variant": "Han",
+                    "match_score": 0.4375,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 39,
+                        "end": 41
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "hn"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l2",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 26,
+                        "end": 28
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "hn"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=26,28"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l2)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/26/28"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3459,784,1893,256"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "abda8f51-60ec-4adc-b107-4364e5fb81ba",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.407246",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "occupation",
+                "modified": "2021-11-23T10:45:45.407507",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Mr",
+                "modified": "2021-11-23T10:45:45.407532",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "occupation",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Mr",
+                    "match_variant": "Mr",
+                    "match_score": 1.0,
+                    "category": "occupation"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 42,
+                        "end": 44
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Mr"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l3",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 2
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Mr"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=0,2"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l3)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/0/2"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3542,1041,1870,319"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "c203e7f1-30a8-4b7d-9339-3bc7c6f6c1ca",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.407601",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.407608",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Cous",
+                "modified": "2021-11-23T10:45:45.407614",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Coshaus",
+                    "match_variant": "Cous",
+                    "match_score": 0.5178571428571428,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 46,
+                        "end": 53
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Coshaus"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l3",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 4,
+                        "end": 11
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Coshaus"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=4,11"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l3)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/4/11"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3542,1041,1870,319"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "87ed0859-4665-493f-bac4-206e0b39b9aa",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.407662",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "object",
+                "modified": "2021-11-23T10:45:45.407669",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Beeld",
+                "modified": "2021-11-23T10:45:45.407675",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "object",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Beels",
+                    "match_variant": "Beeld",
+                    "match_score": 0.725,
+                    "category": "object"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 54,
+                        "end": 59
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Beels"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l3",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 12,
+                        "end": 17
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Beels"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=12,17"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l3)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/12/17"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3542,1041,1870,319"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "abe3e8fe-039f-490d-940a-067bc64e9996",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.407712",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.407719",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "als",
+                "modified": "2021-11-23T10:45:45.407724",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "als",
+                    "match_variant": "als",
+                    "match_score": 1.0,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 60,
+                        "end": 63
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "als"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l3",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 18,
+                        "end": 21
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "als"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=18,21"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l3)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/18/21"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3542,1041,1870,319"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "42d206d1-0645-4e36-8ba7-392a9cc779bc",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.407835",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.407842",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Bly",
+                "modified": "2021-11-23T10:45:45.407848",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "by",
+                    "match_variant": "Bly",
+                    "match_score": 0.4375,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 64,
+                        "end": 66
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "by"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l3",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 22,
+                        "end": 24
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "by"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=22,24"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l3)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/22/24"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3542,1041,1870,319"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "5fc59ebe-9e51-4782-a0c1-eb1c2c8c64ea",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.415983",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.416002",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Vano",
+                "modified": "2021-11-23T10:45:45.416009",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "van",
+                    "match_variant": "Vano",
+                    "match_score": 0.5833333333333334,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 77,
+                        "end": 80
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "van"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l4",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 3
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "van"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=0,3"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l4)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/0/3"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3648,1239,1723,252"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "c3a80243-d57e-4d13-b2cb-8e8cb6190619",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.416054",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.416060",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "ede",
+                "modified": "2021-11-23T10:45:45.416066",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "de",
+                    "match_variant": "ede",
+                    "match_score": 0.625,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 82,
+                        "end": 84
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "de"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l4",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 5,
+                        "end": 7
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "de"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=5,7"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l4)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/5/7"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3648,1239,1723,252"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "5f478727-342c-4258-b30a-1af467f83324",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.416103",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.416109",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Ede",
+                "modified": "2021-11-23T10:45:45.416117",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Edele",
+                    "match_variant": "Ede",
+                    "match_score": 0.6000000000000001,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 85,
+                        "end": 90
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Edele"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l4",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 8,
+                        "end": 13
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Edele"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=8,13"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l4)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/8/13"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3648,1239,1723,252"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "ebe9ae52-5470-4bcc-8fec-79ee4bb1326a",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.416152",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.416158",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Roan",
+                "modified": "2021-11-23T10:45:45.416164",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Rostban",
+                    "match_variant": "Roan",
+                    "match_score": 0.5178571428571428,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 91,
+                        "end": 98
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Rostban"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l4",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 14,
+                        "end": 21
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Rostban"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=14,21"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l4)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/14/21"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3648,1239,1723,252"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "a5765663-b26b-44f9-891e-bc2ce0b3e105",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.416199",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.416205",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Haeren",
+                "modified": "2021-11-23T10:45:45.416211",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Hleren",
+                    "match_variant": "Haeren",
+                    "match_score": 0.7291666666666667,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 99,
+                        "end": 105
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Hleren"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l4",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 22,
+                        "end": 28
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Hleren"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=22,28"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l4)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/22/28"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3648,1239,1723,252"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "c27d55ea-00e3-47af-bda3-cc2e4e331e0c",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.416245",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.416251",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "daer",
+                "modified": "2021-11-23T10:45:45.416257",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "der",
+                    "match_variant": "daer",
+                    "match_score": 0.6666666666666667,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 116,
+                        "end": 119
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "der"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l4",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 39,
+                        "end": 42
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "der"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=39,42"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l4)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/39/42"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3648,1239,1723,252"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "4354bda7-362e-4c65-b51c-ca95f5717f9f",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.429583",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.429598",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Stattin",
+                "modified": "2021-11-23T10:45:45.429602",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Statt",
+                    "match_variant": "Stattin",
+                    "match_score": 0.675,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 120,
+                        "end": 125
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Statt"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l5",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 5
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Statt"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=0,5"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l5)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/0/5"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3617,1391,1739,212"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "efa32862-a35b-4d90-9663-0e212c6c31b2",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.429630",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.429633",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Amsteldam",
+                "modified": "2021-11-23T10:45:45.429636",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Aemsteldam",
+                    "match_variant": "Amsteldam",
+                    "match_score": 0.7875,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 126,
+                        "end": 136
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Aemsteldam"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l5",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 6,
+                        "end": 16
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Aemsteldam"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=6,16"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l5)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/6/16"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3617,1391,1739,212"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "b9bdae7f-b700-4792-b68c-d8ab32946aa5",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.429673",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.429676",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Ina",
+                "modified": "2021-11-23T10:45:45.429679",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "in",
+                    "match_variant": "Ina",
+                    "match_score": 0.5,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 137,
+                        "end": 139
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "in"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l5",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 17,
+                        "end": 19
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "in"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=17,19"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l5)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/17/19"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3617,1391,1739,212"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "7f57441a-98c7-4a1e-9e88-a83ac371ebce",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.429697",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.429699",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Datel",
+                "modified": "2021-11-23T10:45:45.429702",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "date",
+                    "match_variant": "Datel",
+                    "match_score": 0.625,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 140,
+                        "end": 144
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "date"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l5",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 20,
+                        "end": 24
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "date"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=20,24"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l5)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/20/24"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3617,1391,1739,212"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "1012e47d-8522-4bf7-93a8-c720200f2d25",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.429721",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.429724",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "E",
+                "modified": "2021-11-23T10:45:45.429726",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "e",
+                    "match_variant": "E",
+                    "match_score": 0.875,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 147,
+                        "end": 148
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "e"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l5",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 27,
+                        "end": 28
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "e"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=27,28"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l5)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/27/28"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3617,1391,1739,212"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "c676c1af-d88c-4259-83d4-ed4d59870835",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.437861",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.437877",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Win",
+                "modified": "2021-11-23T10:45:45.437881",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "in",
+                    "match_variant": "Win",
+                    "match_score": 0.5,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 177,
+                        "end": 179
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "in"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l6",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 13,
+                        "end": 15
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "in"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=13,15"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l6)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/13/15"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3633,1527,1713,233"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "15ab0fd3-e484-461e-b01d-11257f22374d",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.437912",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.437915",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Rin",
+                "modified": "2021-11-23T10:45:45.437918",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Rinuut",
+                    "match_variant": "Rin",
+                    "match_score": 0.5,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 198,
+                        "end": 204
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Rinuut"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l6",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 34,
+                        "end": 40
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Rinuut"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=34,40"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l6)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/34/40"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3633,1527,1713,233"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "bc629d97-7e89-42ef-ad4e-cb2993b39981",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.449409",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.449428",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Gester",
+                "modified": "2021-11-23T10:45:45.449433",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Begester",
+                    "match_variant": "Gester",
+                    "match_score": 0.6875,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 205,
+                        "end": 213
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Begester"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l8",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 8
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Begester"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=0,8"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l8)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/0/8"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3614,1674,1733,236"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "05f2f440-2e6f-4fdf-ae4d-07dada8e5215",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.449461",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.449464",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Bom",
+                "modified": "2021-11-23T10:45:45.449467",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "om",
+                    "match_variant": "Bom",
+                    "match_score": 0.5,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 234,
+                        "end": 236
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "om"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l8",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 29,
+                        "end": 31
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "om"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=29,31"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l8)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/29/31"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3614,1674,1733,236"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "2918ffb0-38de-4132-922f-ab5dc05d7dc2",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.449490",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.449493",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Den",
+                "modified": "2021-11-23T10:45:45.449496",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "den",
+                    "match_variant": "Den",
+                    "match_score": 0.875,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 237,
+                        "end": 240
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "den"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l8",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 32,
+                        "end": 35
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "den"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=32,35"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l8)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/32/35"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3614,1674,1733,236"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "5a6ffed4-bddf-49de-abf6-4e5902d92423",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.449516",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.449519",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "wedel",
+                "modified": "2021-11-23T10:45:45.449521",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "boedel",
+                    "match_variant": "wedel",
+                    "match_score": 0.625,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 241,
+                        "end": 247
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "boedel"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l8",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 36,
+                        "end": 42
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "boedel"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=36,42"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l8)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/36/42"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3614,1674,1733,236"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "93722b54-4192-42ff-827d-6a3a9c02624d",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.453033",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.453043",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Vano",
+                "modified": "2021-11-23T10:45:45.453046",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "van",
+                    "match_variant": "Vano",
+                    "match_score": 0.5833333333333334,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 248,
+                        "end": 251
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "van"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l9",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 3
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "van"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=0,3"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l9)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/0/3"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3647,1844,1691,198"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "a5c82934-0029-48d9-812a-9c7f03044390",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.453070",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.453074",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Elsas",
+                "modified": "2021-11-23T10:45:45.453076",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Elias",
+                    "match_variant": "Elsas",
+                    "match_score": 0.675,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 252,
+                        "end": 257
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Elias"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l9",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 4,
+                        "end": 9
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Elias"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=4,9"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l9)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/4/9"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3647,1844,1691,198"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "b834500a-4733-4fa4-8459-330b724c7941",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.453094",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.453097",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Tienen",
+                "modified": "2021-11-23T10:45:45.453099",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "Tienes",
+                    "match_variant": "Tienen",
+                    "match_score": 0.75,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 258,
+                        "end": 264
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Tienes"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l9",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 10,
+                        "end": 16
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "Tienes"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=10,16"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l9)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/10/16"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3647,1844,1691,198"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "d55cd69c-432c-4008-bf07-0dfd41b3aa86",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.453116",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.453119",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Tonder",
+                "modified": "2021-11-23T10:45:45.453121",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "onder",
+                    "match_variant": "Tonder",
+                    "match_score": 0.65,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 265,
+                        "end": 270
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "onder"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l9",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 17,
+                        "end": 22
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "onder"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=17,22"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l9)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/17/22"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3647,1844,1691,198"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "768f4456-17c4-4148-84d4-c648963ff6eb",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.453141",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.453144",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Zijst",
+                "modified": "2021-11-23T10:45:45.453146",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "zijs",
+                    "match_variant": "Zijst",
+                    "match_score": 0.625,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 271,
+                        "end": 275
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "zijs"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l9",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 23,
+                        "end": 27
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "zijs"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=23,27"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l9)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/23/27"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3647,1844,1691,198"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "b741564c-f9ff-48eb-813d-418a4c7e70dd",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.453165",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "object",
+                "modified": "2021-11-23T10:45:45.453168",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Tee",
+                "modified": "2021-11-23T10:45:45.453171",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "object",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "te",
+                    "match_variant": "Tee",
+                    "match_score": 0.5625,
+                    "category": "object"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 276,
+                        "end": 278
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "te"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l9",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 28,
+                        "end": 30
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "te"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=28,30"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l9)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/28/30"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3647,1844,1691,198"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "dda9b4f3-b89a-44d4-be53-d3de58843fd9",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.453226",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.453229",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Slaan",
+                "modified": "2021-11-23T10:45:45.453232",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "slaan",
+                    "match_variant": "Slaan",
+                    "match_score": 0.875,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 279,
+                        "end": 284
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "slaan"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l9",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 31,
+                        "end": 36
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "slaan"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=31,36"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l9)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/31/36"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3647,1844,1691,198"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "6dad147d-a719-45d4-b59f-0c64e0c02201",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.453251",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.453254",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "oen",
+                "modified": "2021-11-23T10:45:45.453256",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "en",
+                    "match_variant": "oen",
+                    "match_score": 0.625,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 285,
+                        "end": 287
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "en"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l9",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 37,
+                        "end": 39
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "en"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=37,39"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l9)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/37/39"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3647,1844,1691,198"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "4a19d13b-b004-4f05-958d-ae2f86549726",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.453274",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.453293",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Toft",
+                "modified": "2021-11-23T10:45:45.453298",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "tot",
+                    "match_variant": "Toft",
+                    "match_score": 0.5416666666666666,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 288,
+                        "end": 291
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "tot"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l9",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 40,
+                        "end": 43
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "tot"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=40,43"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l9)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/40/43"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3647,1844,1691,198"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "5324a6ca-f1f4-4e4f-8479-fb9287efe36c",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.463614",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "object",
+                "modified": "2021-11-23T10:45:45.463629",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Tee",
+                "modified": "2021-11-23T10:45:45.463632",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "object",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "te",
+                    "match_variant": "Tee",
+                    "match_score": 0.5625,
+                    "category": "object"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 304,
+                        "end": 306
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "te"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l10",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 12,
+                        "end": 14
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "te"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=12,14"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l10)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/12/14"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3662,1969,1695,176"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "55912c82-c67c-4b99-90af-ae9861bc39ea",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.463661",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.463664",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "lengen",
+                "modified": "2021-11-23T10:45:45.463666",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "brengen",
+                    "match_variant": "lengen",
+                    "match_score": 0.6607142857142857,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 307,
+                        "end": 314
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "brengen"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l10",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 15,
+                        "end": 22
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "brengen"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=15,22"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l10)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/15/22"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3662,1969,1695,176"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "3c7d8201-d77d-4dc7-8f2f-63c874705d94",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.463685",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.463688",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "oen",
+                "modified": "2021-11-23T10:45:45.463691",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "en",
+                    "match_variant": "oen",
+                    "match_score": 0.625,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 315,
+                        "end": 317
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "en"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l10",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 23,
+                        "end": 25
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "en"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=23,25"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l10)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/23/25"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3662,1969,1695,176"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "456f502f-31e5-483c-9dca-8c68f461c9b6",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.463708",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.463711",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "amd",
+                "modified": "2021-11-23T10:45:45.463713",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "admz",
+                    "match_variant": "amd",
+                    "match_score": 0.4375,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 332,
+                        "end": 336
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "admz"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l10",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 40,
+                        "end": 44
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "admz"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=40,44"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l10)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/40/44"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3662,1969,1695,176"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "39e47472-ad56-4cbd-86d3-28cdb7e5a735",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.467076",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.467085",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Esteren",
+                "modified": "2021-11-23T10:45:45.467088",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "nstreren",
+                    "match_variant": "Esteren",
+                    "match_score": 0.5,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 337,
+                        "end": 345
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "nstreren"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l11",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 8
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "nstreren"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=0,8"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l11)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/0/8"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3679,2093,1646,147"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "7b81bf5b-646d-4d1e-a180-8b4819ff25cc",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.467113",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.467115",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Aten",
+                "modified": "2021-11-23T10:45:45.467118",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "ten",
+                    "match_variant": "Aten",
+                    "match_score": 0.5833333333333334,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 346,
+                        "end": 349
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "ten"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l11",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 9,
+                        "end": 12
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "ten"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=9,12"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l11)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/9/12"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3679,2093,1646,147"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "d49432c7-20aa-44c9-9728-4dc417368a53",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.467138",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.467141",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "etten",
+                "modified": "2021-11-23T10:45:45.467144",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "ntten",
+                    "match_variant": "etten",
+                    "match_score": 0.725,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 350,
+                        "end": 355
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "ntten"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l11",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 13,
+                        "end": 18
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "ntten"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=13,18"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l11)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/13/18"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3679,2093,1646,147"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "ba183d4d-3121-4566-8f1a-0bd42ac82ffa",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.467161",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.467164",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Vano",
+                "modified": "2021-11-23T10:45:45.467166",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "van",
+                    "match_variant": "Vano",
+                    "match_score": 0.5833333333333334,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 356,
+                        "end": 359
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "van"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l11",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 19,
+                        "end": 22
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "van"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=19,22"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l11)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/19/22"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3679,2093,1646,147"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "43c13c8e-3761-4e66-aa57-4b2b0205e41e",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.467184",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.467187",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Dien",
+                "modified": "2021-11-23T10:45:45.467189",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "die",
+                    "match_variant": "Dien",
+                    "match_score": 0.5833333333333334,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 360,
+                        "end": 363
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "die"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l11",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 23,
+                        "end": 26
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "die"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=23,26"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l11)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/23/26"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3679,2093,1646,147"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "ec04004e-d880-437c-9ac6-b19732385a59",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.467208",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.467211",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "gemen",
+                "modified": "2021-11-23T10:45:45.467213",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "geien",
+                    "match_variant": "gemen",
+                    "match_score": 0.675,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 364,
+                        "end": 369
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "geien"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l11",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 27,
+                        "end": 32
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "geien"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=27,32"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l11)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/27/32"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3679,2093,1646,147"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "e4940c2a-b0af-4a8c-a1da-c66f7ce59b62",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.467232",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.467281",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Diem",
+                "modified": "2021-11-23T10:45:45.467345",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "die",
+                    "match_variant": "Diem",
+                    "match_score": 0.5833333333333334,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 370,
+                        "end": 373
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "die"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l11",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 33,
+                        "end": 36
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "die"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=33,36"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l11)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/33/36"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3679,2093,1646,147"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "9186b1ee-c648-452f-8f5b-75337583d397",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.467395",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.467401",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "daar",
+                "modified": "2021-11-23T10:45:45.467403",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "daar",
+                    "match_variant": "daar",
+                    "match_score": 1.0,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 374,
+                        "end": 378
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "daar"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l11",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 37,
+                        "end": 41
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "daar"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=37,41"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l11)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/37/41"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3679,2093,1646,147"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "69727209-8f19-43d6-9276-f0bd8751dc91",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.472020",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.472029",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "tiel",
+                "modified": "2021-11-23T10:45:45.472032",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "tie",
+                    "match_variant": "tiel",
+                    "match_score": 0.7083333333333334,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 379,
+                        "end": 382
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "tie"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l12",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 0,
+                        "end": 3
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "tie"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=0,3"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l12)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/0/3"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3696,2203,1276,226"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "12984049-9569-4bc7-b28d-90f1a892e5e5",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.472055",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.472058",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Zel",
+                "modified": "2021-11-23T10:45:45.472061",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "zel",
+                    "match_variant": "Zel",
+                    "match_score": 0.875,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 383,
+                        "end": 386
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "zel"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l12",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 4,
+                        "end": 7
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "zel"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=4,7"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l12)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/4/7"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3696,2203,1276,226"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "9b9dbeda-a050-42a8-ae10-95bf082e1e05",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.472080",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.472082",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "Eenden",
+                "modified": "2021-11-23T10:45:45.472085",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "bevenden",
+                    "match_variant": "Eenden",
+                    "match_score": 0.53125,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 398,
+                        "end": 406
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "bevenden"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l12",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 19,
+                        "end": 27
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "bevenden"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=19,27"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l12)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/19/27"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3696,2203,1276,226"
+                }
+            }
+        ]
+    },
+    {
+        "@context": [
+            "http://www.w3.org/ns/anno.jsonld",
+            "https://leonvanwissen.nl/vocab/roar/roar.json"
+        ],
+        "id": "bf17a265-fe0f-4684-b521-45bb16f9fd91",
+        "type": "Annotation",
+        "motivation": "classifying",
+        "generated": "2021-11-23T10:45:45.472106",
+        "generator": {
+            "id": "https://github.com/knaw-huc/golden-agents-htr",
+            "type": "Software",
+            "name": "GoldenAgentsNER"
+        },
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "modified": "2021-11-23T10:45:45.472109",
+                "purpose": "tagging"
+            },
+            {
+                "type": "TextualBody",
+                "value": "dorsen",
+                "modified": "2021-11-23T10:45:45.472112",
+                "purpose": "commenting"
+            },
+            {
+                "type": "TextualBody",
+                "value": "location",
+                "purpose": "classifying"
+            },
+            {
+                "type": "Dataset",
+                "value": {
+                    "match_phrase": "worsen",
+                    "match_variant": "dorsen",
+                    "match_score": 0.75,
+                    "category": "location"
+                }
+            }
+        ],
+        "target": [
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 407,
+                        "end": 413
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "worsen"
+                    }
+                ]
+            },
+            {
+                "source": "urn:golden-agents:14257_KLAC00451:scan=KLAC00451000202:textline=r1l12",
+                "selector": [
+                    {
+                        "type": "TextPositionSelector",
+                        "start": 28,
+                        "end": 34
+                    },
+                    {
+                        "type": "TextQuoteSelector",
+                        "exact": "worsen"
+                    },
+                    {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://tools.ietf.org/rfc/rfc5147",
+                        "value": "char=28,34"
+                    }
+                ]
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/contents",
+                "type": "xml",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://tools.ietf.org/rfc/rfc3023",
+                    "value": "xpointer(id(r1l12)/TextEquiv/Unicode)"
+                }
+            },
+            {
+                "source": "http://localhost:8080/textrepo/versions/x/chars/28/34"
+            },
+            {
+                "source": "https://files.transkribus.eu/iiif/2/MOQMINPXXPUTISCRFIRKIOIX/full/max/0/default.jpg",
+                "type": "image",
+                "selector": {
+                    "type": "FragmentSelector",
+                    "conformsTo": "http://www.w3.org/TR/media-frags/",
+                    "value": "xywh=3696,2203,1276,226"
+                }
+            }
+        ]
+    }
+]

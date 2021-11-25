@@ -6,14 +6,16 @@ import "@recogito/recogito-js/dist/recogito.min.css";
 
 // Theming only
 import "semantic-ui-css/semantic.min.css";
-import { Button, Container, Icon, Header, Segment } from "semantic-ui-react";
+import { Container, Header, Segment, Button, Icon } from "semantic-ui-react";
 
 interface DocumentProps {
   annotations: {}[];
   setAnnotations: (annotations: {}[]) => void;
+  text: string;
+  setText: (text: string) => void;
 }
 
-let text = `Inventaris ende specificatie van
+let text0 = `Inventaris ende specificatie van
 432
 alle den huysraet Imboel porceleijne
 Liwaet potgelt gout en silverwerck
@@ -110,40 +112,40 @@ DMannek
 Quod attestor rogatus
 d van der groe Nots. P.`;
 
+const basenames = require("./ga-selection-basenames.json");
+
+class TextSelector extends Component<{selection:string, onChange}> {
+
+  render = () => {
+    const options = basenames.map(option => (
+      <option key={option} value={option}>
+        {option}
+      </option>
+    ));
+    return (
+      <span>
+      Text: &nbsp;
+      <select onChange = { (e) => this.props.onChange(e.target.value) }>
+        {options}
+      </select>
+      </span>
+    )
+  }
+}
+
 // Make own component 'Document' for the annotatable source
 class Document extends Component<DocumentProps> {
   htmlId = "text-content";
 
-  // Example tags that serve as suggestions in the tool
   VOCABULARY = [
-    {
-      label: "material",
-      uri: "http://vocab.getty.edu/aat/300010358",
-    },
-    { label: "object", uri: "http://vocab.getty.edu/aat/300311889" },
-    { label: "person", uri: "http://vocab.getty.edu/aat/300024979" },
+    { label: "material", uri: "http://vocab.getty.edu/aat/300010358" },
+    { label: "object",   uri: "http://vocab.getty.edu/aat/300311889" },
+    { label: "person",   uri: "http://vocab.getty.edu/aat/300024979" },
+    { label: "place",    uri: "http://vocab.getty.edu/aat/300008347" },
   ];
 
-  // Get the annotations from a static file in this case
-  getAnnotations = async () => {
-    const res = await fetch("annotations.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    });
-
-    const data = await res.json();
-
-    return data;
-  };
-
   // Initialize the Recogito instance after the component is mounted in the page
-  componentDidMount() {
-    const storeAnnotation = () => {
-      this.props.setAnnotations(r.getAnnotations());
-    };
-
+  componentDidUpdate = () => {
     const r = new Recogito({
       content: this.htmlId,
       locale: "auto",
@@ -162,16 +164,23 @@ class Document extends Component<DocumentProps> {
           body.purpose === "tagging" ? body.value : []
         );
 
+        console.log(tags);
+
         // See CSS for the actual styling
         const tagClasses: string[] = [];
 
         for (const tag of tags) {
           if (tag === "material") {
             tagClasses.push("tag-material");
+
           } else if (tag === "object") {
             tagClasses.push("tag-object");
+
           } else if (tag === "person") {
             tagClasses.push("tag-person");
+
+          } else if (tag === "place") {
+            tagClasses.push("tag-place");
           }
         }
 
@@ -179,16 +188,16 @@ class Document extends Component<DocumentProps> {
       },
     });
 
+    const storeAnnotation = () => {
+      this.props.setAnnotations(r.getAnnotations());
+    };
+
     // Make sure that the annotations are stored in the state
     r.on("createAnnotation", storeAnnotation);
     r.on("deleteAnnotation", storeAnnotation);
     r.on("updateAnnotation", storeAnnotation);
 
-    // Load the annotations from the file
-    this.getAnnotations().then((annotations) => {
-      annotations.map((annotation: {}) => r.addAnnotation(annotation));
-      this.props.setAnnotations(annotations);
-    });
+    this.props.annotations.map((annotation: {}) => r.addAnnotation(annotation));
 
     // For debugging, this can be helpful
     // console.log(r);
@@ -197,19 +206,70 @@ class Document extends Component<DocumentProps> {
   render() {
     return (
       <div id={this.htmlId}>
-        <div className="code">{text}</div>
+        <div className="code">{this.props.text}</div>
       </div>
     );
   }
 }
 
+  // Get the annotations from a static file in this case
+const getAnnotations = async () => {
+    const res = await fetch("annotations.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+
+    const data = await res.json();
+    console.log(data)
+    return data;
+  };
+var annotations0;
+getAnnotations().then((a)=>annotations0=a);
+
 const App = () => {
-  const [annotations, setAnnotations] = useState<{}[]>([]);
+  const [annotations, setAnnotations] = useState<{}[]>(annotations0);
+  const [text, setText] = useState(text0);
+  const [selection, setselection] = useState(basenames[0]);
+
+  const fetchText = async (selected:string) => {
+    const res = await fetch(selected+".txt", {
+      headers: {
+        "Content-Type": "text/plain",
+        Accept: "text/plain",
+      },
+    });
+    const text = await res.text();
+    return text;
+  }
+
+  const fetchAnnotations = async (selected:string) => {
+    const res = await fetch(selected+".json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const annotations = await res.json();
+    console.log(annotations);
+    return annotations;
+  }
+
+  const handleSelectionChange = (newSelection) => {
+    setselection(newSelection);
+    fetchText(newSelection).then(t => setText(t));
+    fetchAnnotations(newSelection).then(a => setAnnotations(a));
+  }
 
   return (
     <div className="App">
       <Container>
-        <Header as="h1">Probate Annotate</Header>
+        <Header as="h1">Golden Agents: Annotation Evaluation</Header>
+
+        <div>
+          <TextSelector selection={selection} onChange={handleSelectionChange}/>
+        &nbsp;
 
         <Button primary icon className="downloadbutton">
           <a
@@ -222,12 +282,22 @@ const App = () => {
           </a>{" "}
           <Icon name="download" />
         </Button>
+        </div>
+
+        <div>
+        Tag Legend: &nbsp;
+        <span className="tag-person">person</span>  &nbsp;
+        <span className="tag-place">place</span>  &nbsp;
+        <span className="tag-object">object</span>  &nbsp;
+        <span className="tag-material">material</span>  &nbsp;
+        </div>
 
         <Segment>
-          <Document annotations={annotations} setAnnotations={setAnnotations} />
+          <Document annotations={annotations} setAnnotations={setAnnotations} text={text} setText={setText}/>
         </Segment>
       </Container>
     </div>
   );
 };
+
 export default App;
