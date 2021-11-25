@@ -8,111 +8,24 @@ import "@recogito/recogito-js/dist/recogito.min.css";
 import "semantic-ui-css/semantic.min.css";
 import { Container, Header, Segment, Button, Icon } from "semantic-ui-react";
 
+// interface Doc {
+//   text: string;
+//   annotations: {}[];
+// };
+
 interface DocumentProps {
-  annotations: {}[];
-  setAnnotations: (annotations: {}[]) => void;
-  text: string;
-  setText: (text: string) => void;
+  doc: any;
+  setDoc: (doc: any) => void;
+  // annotations: {}[];
+  // setAnnotations: (annotations: {}[]) => void;
+  // text: string;
+  // setText: (text: string) => void;
 }
 
-let text0 = `Inventaris ende specificatie van
-432
-alle den huysraet Imboel porceleijne
-Liwaet potgelt gout en silverwerck
-by Catharina Cleyburgh naergelaten
-voor soo veel desselfs gesamentlycke
-Erfgenamen competeren in gevolgen
-van d Testamente van deselve Catharina
-Cleyburgh
-en nooteboome kas
-Twaelf ses karsseboome stoelen
-ses spaense stoelen
--
-Een spiegeltje
-Een schildery van bedesda
-Een dito van een hondt
-Een dito van een appelkopertje
-Een Landschap schildery
-f
-2
-Een printebortje van d' langenins
-Een printebortje synde een vogelaertje
-Twee sackwerckse doofpotjens
-Drie delfs werckse schootels
-en schuymspaen
-Een koopere visketel,
-Een koopere Vijsel en stampert
-Een metale podtsen koper decksel
-Een groote tinne schotel
-drie dito kleynder
-ses Tinne taeffelborden
-acht
-Een Tinne Water pot
-Een coopere Taartpan
-Twee Een dito Blaeckers
--
-noch eenigh kenckengoet
-Twee groote porceleyne kommen
-drie porceleyne drjlingen
-„
-seven
-drie
-Twee dubbelde porceleyne boterschotels
-Twee dito boterschaeltjens
-acht porceleyne boterschotels,
-Twee groote papegays Coppen en vyfdito cleynder
-Vier
-Twee halve porceleyne lampet schootels
-Een pleugkom
-vier mostertschaeltjens
-Twee kommetjens en twee Clapmutsjens
-noch negen kopjens en tweebrandewyns
-pimpeltjens
-Tien doornickse Trype stoel cussens
-Een groen Taeffelkleeden
-Twee
-ƒ
-alle welcke voorsz. effecten en Contanten tsamen
-ter somme van ses duijsent seven hondert acht
-gls. negentien stver acht penningen door de voors.
-Sr. Liscalhet sullen werden overgelevert ende
-behaedight ten behoeve van de voorn. Erfgenamen
-van Catharina Cleijburgh onderde aen de voorsz.
-Sr David van der meer Somme door deselven
-geadministrerde vruchten ende Interessen daervan ontf. ende aen
-hem liscaljet uytgereijckt te werdn sijn
-leven langh gedurende ingevolge van de Testa
-mente van deselve Catharina Cleyburgh
-bekennende oock mede hy Compt. Daniel liscaljet
-van sijn duarie by huwelycxse voorwaerde
-hem competerende ende van sijn gelogateerde
-buyten de voorsz. vruchten ende Interessen voldaen ende
-betaelt te sijn mitsgaders de gemelte Erfge
-e
-namen daervan oock bij desen te quiteren
-met welcke voorsz. scheydinge ende delinge resp
-de voorn. Compten verclaren seer wel te
-vreede te syn ende te vergenoegen Belovende
-de ee de anderen dh effecte van desen te
-sullen doen ende laten genieten sonder daertegens
-te doen ofte gedoogen gedaen te werden in
-rechte noch daer buijten in geenderley
-manieren, verbindende tot naercominge
-deses haere persoonen ende goederen deselve
-stellende ten bedwangh van allen rechten ende
-rechteren Alles oprecht gedaen t Amst. ter
-presentie van Jacob van der groe ende gere. Mnnick
-als getuijgen hier toe versocht
-Daniel E is kalijet
-Harmen Dirckse Modeiller
-huybert lieileers
-wdijle blijbingh
-GvGroe
-DMannek
-Quod attestor rogatus
-d van der groe Nots. P.`;
-
-const basenames = require("./ga-selection-basenames.json");
+const basenames:string[] = require("./ga-selection-basenames.json");
+const annotations0:{}[] = require("./annotations.json");
+const text0:string = '';
+const doc0={text:text0,annotations:annotations0};
 
 class TextSelector extends Component<{selection:string, onChange}> {
 
@@ -144,8 +57,17 @@ class Document extends Component<DocumentProps> {
     { label: "place",    uri: "http://vocab.getty.edu/aat/300008347" },
   ];
 
-  // Initialize the Recogito instance after the component is mounted in the page
+  shouldComponentUpdate = (newProps,_) => {
+    return newProps.doc !== this.props.doc;
+  }
+
   componentDidUpdate = () => {
+    this.componentDidMount();
+  }
+
+  // Initialize the Recogito instance after the component is mounted in the page
+  componentDidMount = () => {
+    // console.log("componentDidMount");
     const r = new Recogito({
       content: this.htmlId,
       locale: "auto",
@@ -163,8 +85,6 @@ class Document extends Component<DocumentProps> {
         const tags = annotation.bodies.flatMap((body: any) =>
           body.purpose === "tagging" ? body.value : []
         );
-
-        console.log(tags);
 
         // See CSS for the actual styling
         const tagClasses: string[] = [];
@@ -189,7 +109,9 @@ class Document extends Component<DocumentProps> {
     });
 
     const storeAnnotation = () => {
-      this.props.setAnnotations(r.getAnnotations());
+      let currentDoc = this.props.doc;
+      currentDoc.annotations = r.getAnnotations();
+      this.props.setDoc(currentDoc);
     };
 
     // Make sure that the annotations are stored in the state
@@ -197,7 +119,8 @@ class Document extends Component<DocumentProps> {
     r.on("deleteAnnotation", storeAnnotation);
     r.on("updateAnnotation", storeAnnotation);
 
-    this.props.annotations.map((annotation: {}) => r.addAnnotation(annotation));
+    console.log(this.props);
+    // this.props.annotations.map((annotation: {}) => r.addAnnotation(annotation));
 
     // For debugging, this can be helpful
     // console.log(r);
@@ -206,32 +129,15 @@ class Document extends Component<DocumentProps> {
   render() {
     return (
       <div id={this.htmlId}>
-        <div className="code">{this.props.text}</div>
+        <div className="code">{this.props.doc.text}</div>
       </div>
     );
   }
 }
 
-  // Get the annotations from a static file in this case
-const getAnnotations = async () => {
-    const res = await fetch("annotations.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    });
-
-    const data = await res.json();
-    console.log(data)
-    return data;
-  };
-var annotations0;
-getAnnotations().then((a)=>annotations0=a);
-
 const App = () => {
-  const [annotations, setAnnotations] = useState<{}[]>(annotations0);
-  const [text, setText] = useState(text0);
-  const [selection, setselection] = useState(basenames[0]);
+  const [doc, setDoc] = useState(doc0);
+  const [selection, setSelection] = useState(basenames[0]);
 
   const fetchText = async (selected:string) => {
     const res = await fetch(selected+".txt", {
@@ -252,14 +158,24 @@ const App = () => {
       },
     });
     const annotations = await res.json();
-    console.log(annotations);
     return annotations;
   }
 
-  const handleSelectionChange = (newSelection) => {
-    setselection(newSelection);
-    fetchText(newSelection).then(t => setText(t));
-    fetchAnnotations(newSelection).then(a => setAnnotations(a));
+  const putAnnotations = (basename:string, annotations:{}[]) => {
+    console.log("TODO: PUT http://backend.com/documents/"+basename+"/annotations");
+    console.log(annotations);
+  }
+
+  const handleSelectionChange = async (newSelection) => {
+    putAnnotations(selection,doc.annotations);
+    setSelection(newSelection);
+    var newText;
+    var newAnnotations;
+    await fetchText(newSelection).then(t => newText = t);
+    await fetchAnnotations(newSelection).then(a => newAnnotations = a);
+    const newDoc = {text:newText,annotations:newAnnotations};
+
+    setDoc(newDoc);
   }
 
   return (
@@ -274,7 +190,7 @@ const App = () => {
         <Button primary icon className="downloadbutton">
           <a
             href={`data:text/json;charset=utf-8,${encodeURIComponent(
-              JSON.stringify(annotations, null, 2)
+              JSON.stringify(doc.annotations, null, 2)
             )}`}
             download="annotations.json"
           >
@@ -293,7 +209,7 @@ const App = () => {
         </div>
 
         <Segment>
-          <Document annotations={annotations} setAnnotations={setAnnotations} text={text} setText={setText}/>
+          <Document doc={doc} setDoc={setDoc} />
         </Segment>
       </Container>
     </div>
