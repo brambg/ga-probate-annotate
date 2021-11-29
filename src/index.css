@@ -34,3 +34,7 @@
   border-bottom: 2px solid rgb(92, 223, 111) !important;
 }
 
+.tag-occupation {
+  background-color: rgba(124, 106, 23, 0.349) !important;
+  border-bottom: 2px solid rgb(128, 100, 50) !important;
+}

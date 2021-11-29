@@ -49,12 +49,14 @@ class TextSelector extends Component<{selection:string, onChange}> {
 // Make own component 'Document' for the annotatable source
 class Document extends Component<DocumentProps> {
   htmlId = "text-content";
+  r; // the Recogito instance
 
   VOCABULARY = [
     { label: "material", uri: "http://vocab.getty.edu/aat/300010358" },
     { label: "object",   uri: "http://vocab.getty.edu/aat/300311889" },
     { label: "person",   uri: "http://vocab.getty.edu/aat/300024979" },
-    { label: "place",    uri: "http://vocab.getty.edu/aat/300008347" },
+    { label: "location", uri: "http://vocab.getty.edu/aat/300008347" },
+    { label: "occupation", uri: "http://vocab.getty.edu/aat/300008347?" },
   ];
 
   shouldComponentUpdate = (newProps,_) => {
@@ -62,13 +64,15 @@ class Document extends Component<DocumentProps> {
   }
 
   componentDidUpdate = () => {
+    // console.log('componentDidUpdate');
+    // this.r.destroy();
     this.componentDidMount();
   }
 
   // Initialize the Recogito instance after the component is mounted in the page
   componentDidMount = () => {
-    // console.log("componentDidMount");
-    const r = new Recogito({
+    // console.debug("componentDidMount");
+    this.r = new Recogito({
       content: this.htmlId,
       locale: "auto",
       mode: "pre",
@@ -99,8 +103,11 @@ class Document extends Component<DocumentProps> {
           } else if (tag === "person") {
             tagClasses.push("tag-person");
 
-          } else if (tag === "place") {
+          } else if (tag === "location") {
             tagClasses.push("tag-place");
+
+          } else if (tag === "occupation") {
+            tagClasses.push("tag-occupation");
           }
         }
 
@@ -110,20 +117,25 @@ class Document extends Component<DocumentProps> {
 
     const storeAnnotation = () => {
       let currentDoc = this.props.doc;
-      currentDoc.annotations = r.getAnnotations();
+      currentDoc.annotations = this.r.getAnnotations();
       this.props.setDoc(currentDoc);
     };
 
     // Make sure that the annotations are stored in the state
-    r.on("createAnnotation", storeAnnotation);
-    r.on("deleteAnnotation", storeAnnotation);
-    r.on("updateAnnotation", storeAnnotation);
+    this.r.on("createAnnotation", storeAnnotation);
+    this.r.on("deleteAnnotation", storeAnnotation);
+    this.r.on("updateAnnotation", storeAnnotation);
 
-    console.log(this.props);
-    // this.props.annotations.map((annotation: {}) => r.addAnnotation(annotation));
+    console.info(this.props);
+    this.props.doc.annotations.map((annotation: {}) => this.r.addAnnotation(annotation));
 
     // For debugging, this can be helpful
     // console.log(r);
+  }
+
+  componentWillUnmount = () => {
+    console.log('unmounting...');
+    this.r.destroy();
   }
 
   render() {
@@ -162,8 +174,8 @@ const App = () => {
   }
 
   const putAnnotations = (basename:string, annotations:{}[]) => {
-    console.log("TODO: PUT http://backend.com/documents/"+basename+"/annotations");
-    console.log(annotations);
+    console.debug("TODO: PUT http://backend.com/documents/"+basename+"/annotations");
+    console.info(annotations);
   }
 
   const handleSelectionChange = async (newSelection) => {
@@ -203,9 +215,10 @@ const App = () => {
         <div>
         Tag Legend: &nbsp;
         <span className="tag-person">person</span>  &nbsp;
-        <span className="tag-place">place</span>  &nbsp;
+        <span className="tag-place">location</span>  &nbsp;
         <span className="tag-object">object</span>  &nbsp;
         <span className="tag-material">material</span>  &nbsp;
+        <span className="tag-occupation">occupation</span>  &nbsp;
         </div>
 
         <Segment>
