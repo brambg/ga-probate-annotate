@@ -52,11 +52,14 @@ class Document extends Component<DocumentProps> {
   r; // the Recogito instance
 
   VOCABULARY = [
+    { label: "firstname", uri: "http://vocab.getty.edu/aat/300008347?" },
+    { label: "familyname", uri: "http://vocab.getty.edu/aat/300008347?" },
+    { label: "person",   uri: "http://vocab.getty.edu/aat/300024979" },
+    { label: "occupation", uri: "http://vocab.getty.edu/aat/300008347?" },
     { label: "material", uri: "http://vocab.getty.edu/aat/300010358" },
     { label: "object",   uri: "http://vocab.getty.edu/aat/300311889" },
-    { label: "person",   uri: "http://vocab.getty.edu/aat/300024979" },
+    { label: "streetname", uri: "http://vocab.getty.edu/aat/300008347?" },
     { label: "location", uri: "http://vocab.getty.edu/aat/300008347" },
-    { label: "occupation", uri: "http://vocab.getty.edu/aat/300008347?" },
   ];
 
   shouldComponentUpdate = (newProps,_) => {
@@ -103,8 +106,17 @@ class Document extends Component<DocumentProps> {
           } else if (tag === "person") {
             tagClasses.push("tag-person");
 
+          } else if (tag === "firstname") {
+            tagClasses.push("tag-firstname");
+
+          } else if (tag === "familyname") {
+            tagClasses.push("tag-familyname");
+
           } else if (tag === "location") {
             tagClasses.push("tag-place");
+
+          } else if (tag === "streetname") {
+            tagClasses.push("tag-streetname");
 
           } else if (tag === "occupation") {
             tagClasses.push("tag-occupation");
@@ -214,11 +226,14 @@ const App = () => {
 
         <div>
         Tag Legend: &nbsp;
+        <span className="tag-firstname">firstname</span>  &nbsp;
+        <span className="tag-familyname">familyname</span>  &nbsp;
         <span className="tag-person">person</span>  &nbsp;
+        <span className="tag-occupation">occupation</span>  &nbsp;
+        <span className="tag-streetname">streetname</span>  &nbsp;
         <span className="tag-place">location</span>  &nbsp;
         <span className="tag-object">object</span>  &nbsp;
         <span className="tag-material">material</span>  &nbsp;
-        <span className="tag-occupation">occupation</span>  &nbsp;
         </div>
 
         <Segment>
