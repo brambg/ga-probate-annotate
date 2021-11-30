@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  ga-analiticcl-evaluate :
+    container_name: ga-analiticcl-evaluate 
+    image: registry.diginfra.net/tt/ga-analiticcl-evaluate :latest
+    shm_size: 1g
+    networks:
+      - nginxproxynetwork
+    ports:
+      - 80:80
+    environment:
+      - VIRTUAL_HOST=elucidate.tt.di.huc.knaw.nl
+    restart: unless-stopped
+
+networks:
+  nginxproxynetwork:
+    external:
+      name: nginxproxynetwork
