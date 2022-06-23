@@ -3,6 +3,7 @@ import React, { Component, useState } from "react";
 // Annotation package
 import { Recogito } from "@recogito/recogito-js";
 import "@recogito/recogito-js/dist/recogito.min.css";
+import GeotaggingWidget from "@recogito/geotagging-widget";
 
 // Theming only
 import "semantic-ui-css/semantic.min.css";
@@ -26,6 +27,10 @@ const basenames:string[] = require("./ga-selection-basenames.json");
 const annotations0:{}[] = require("./annotations.json");
 const text0:string = '';
 const doc0={text:text0,annotations:annotations0};
+
+const gtw_config = {
+  defaultOrigin: [ 48, 16 ]
+};
 
 class TextSelector extends Component<{selection:string, onChange}> {
 
@@ -85,6 +90,7 @@ class Document extends Component<DocumentProps> {
           widget: "TAG",
           vocabulary: this.VOCABULARY,
         },
+        { widget: GeotaggingWidget(gtw_config) }
       ],
       relationVocabulary: ["isRelated", "isPartOf", "isSameAs "],
       formatter: (annotation: any) => {
