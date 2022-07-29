@@ -52,3 +52,19 @@
   background-color: rgba(124, 106, 23, 0.349) !important;
   border-bottom: 2px solid rgb(128, 100, 50) !important;
 }
+
+/** Temprorary hack - will be included in the widget theme in the next release **/
+.r6o-geotagging-toolbar-right {
+  white-space:nowrap;
+}
+
+/* COLORS=[ "#00429d",
+"#4771b2",
+"#73a2c6",
+"#a5d5d8",
+"#ffffe0",
+"#ffbcaf",
+"#f4777f",
+"#cf3759",
+"#93003a",
+]; */
